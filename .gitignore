@@ -19,3 +19,10 @@ dist/
 # OS
 .DS_Store
 *.save
+
+# Internal planning and tooling files
+.claude/
+PROMPTS.md
+PROJECT.md
+CLAUDE.md
+ROADMAP.md
