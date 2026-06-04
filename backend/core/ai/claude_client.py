@@ -33,7 +33,7 @@ async def generate_quote(
     cut_panels: int,
     waste_percentage: float,
 ) -> dict:
-    """Use Claude to generate a detailed construction cost quote in markdown format.
+    """Use AI model to generate a detailed construction cost quote in markdown format.
 
     Returns dict with keys: ai_summary (str), total_cost (float), breakdown_json (str).
     """
@@ -111,7 +111,7 @@ async def generate_report(
     optimisation_runs: list[dict],
     quotes: list[dict],
 ) -> str:
-    """Use Claude to generate a formal KTP project progress report in markdown.
+    """Use AI model to generate a formal KTP project progress report in markdown.
 
     Returns the full markdown string.
     """

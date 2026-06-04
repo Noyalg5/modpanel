@@ -4,7 +4,7 @@ An AI-powered platform for modern construction planning using Structural Insulat
 
 ## Features
 - **AI Panel Layout Optimiser** — genetic algorithm that minimises material waste
-- **AI Cost Quoting** — Claude AI generates itemised construction quotes
+- **AI Cost Quoting** — AI generates itemised construction quotes
 - **Project Reports** — AI-written KTP-style progress reports
 - **Project Management** — dashboard to manage construction projects
 
@@ -38,6 +38,6 @@ pytest tests/ -v
 
 ## Tech Stack
 - Backend: Python, FastAPI, SQLAlchemy, SQLite
-- AI: Anthropic Claude API
+- AI: AI Provider API
 - Optimisation: Custom Genetic Algorithm
 - Frontend: React, Vite, Tailwind CSS

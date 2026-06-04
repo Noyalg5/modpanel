@@ -1,11 +1,11 @@
-# ModPanel AI Platform — Claude Code Prompts
+# ModPanel AI Platform — AI Coding Prompts
 
 ## How to use this file
 
 1. Create a folder called `modpanel` on your computer
-2. Copy `CLAUDE.md` and `ROADMAP.md` into it
+2. Copy `PROJECT.md` and `ROADMAP.md` into it
 3. Open your terminal, `cd` into `modpanel`
-4. Run `claude` to open Claude Code
+4. Open your AI coding tool
 5. Paste **one prompt at a time** — wait for it to finish before pasting the next
 
 ---
@@ -15,7 +15,7 @@
 Paste this first. It builds the entire Python backend skeleton.
 
 ```
-Read CLAUDE.md carefully before doing anything.
+Read PROJECT.md carefully before doing anything.
 
 Then implement Phase 1 — the backend foundation:
 
@@ -78,7 +78,7 @@ Use proper Pydantic v2 schemas for all request/response bodies. Keep each functi
 Paste this after Prompt 1 is complete.
 
 ```
-Read CLAUDE.md. Phase 1 is done. Now implement Phase 2 — the heuristic optimiser.
+Read PROJECT.md. Phase 1 is done. Now implement Phase 2 — the heuristic optimiser.
 
 1. Create `backend/core/__init__.py` (empty)
 2. Create `backend/core/optimiser/__init__.py` (empty)
@@ -132,12 +132,12 @@ Write a brief docstring on each function explaining what it does.
 
 ---
 
-## PROMPT 3 — AI Integration (Claude API)
+## PROMPT 3 — AI Integration
 
 Paste this after Prompt 2 is complete.
 
 ```
-Read CLAUDE.md. Phases 1 and 2 are done. Now implement Phase 3 — AI integration using the Anthropic Claude API.
+Read PROJECT.md. Phases 1 and 2 are done. Now implement Phase 3 — AI integration using the AI model API.
 
 1. Create `backend/core/ai/__init__.py` (empty)
 
@@ -145,7 +145,7 @@ Read CLAUDE.md. Phases 1 and 2 are done. Now implement Phase 3 — AI integratio
 
    a) `generate_quote(project_name: str, wall_area_m2: float, panel_name: str, cost_per_unit: float, panel_count: int, waste_pct: float) -> dict`
    
-   Build this prompt and send to Claude (claude-haiku-4-5):
+   Build this prompt and send to the AI model (claude-haiku-4-5):
    
    "You are a construction cost estimator. Produce an itemised quote in markdown for:
    Project: {project_name}
@@ -201,7 +201,7 @@ Use the `anthropic` Python SDK. Load ANTHROPIC_API_KEY from config. Handle API e
 Paste this after Prompt 3 is complete.
 
 ```
-Read CLAUDE.md. The backend (Phases 1-3) is complete. Now build the React frontend (Phase 4).
+Read PROJECT.md. The backend (Phases 1-3) is complete. Now build the React frontend (Phase 4).
 
 1. In the `frontend/` folder, create `package.json` with these dependencies:
    - react, react-dom, react-router-dom
@@ -262,7 +262,7 @@ Use Tailwind utility classes for all styling. Keep components simple and clean.
 Paste this after Prompt 4 is complete.
 
 ```
-Read CLAUDE.md. All four phases are complete. Now do the final polish:
+Read PROJECT.md. All four phases are complete. Now do the final polish:
 
 1. Create `backend/tests/__init__.py` (empty)
 

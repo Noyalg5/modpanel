@@ -48,18 +48,18 @@ POST a wall size + panel type → receive an optimised panel layout with waste %
 
 ## Phase 3 — AI Integration (Week 5–6)
 
-**Goal:** Claude API powers intelligent cost quoting and project report generation.
+**Goal:** AI model powers intelligent cost quoting and project report generation.
 
 ### Tasks
 - [ ] Create `backend/core/ai/claude_client.py`:
-  - `generate_quote(project, optimisation_run)` — prompt Claude to produce itemised cost quote
-  - `generate_report(project, runs, quotes)` — prompt Claude to write a project summary report
+  - `generate_quote(project, optimisation_run)` — prompt the AI model to produce itemised cost quote
+  - `generate_report(project, runs, quotes)` — prompt the AI model to write a project summary report
 - [ ] Create `backend/api/quotes.py` — POST to generate quote, GET to list quotes
 - [ ] Create `backend/api/reports.py` — POST to generate report, GET to list reports
 - [ ] Store quote output and report markdown in DB
 - [ ] Add `.env` key: `ANTHROPIC_API_KEY`
 
-### Sample Claude Prompt (quoting)
+### Sample AI Prompt (quoting)
 ```
 You are a construction cost estimator. Given the following project and panel layout data, produce an itemised quote in markdown format with:
 - Number of panels required
@@ -137,17 +137,17 @@ Once the core platform is running, these extensions map directly to KTP research
 
 ---
 
-## How to Use This Roadmap with Claude Code
+## How to Use This Roadmap
 
-Open Claude Code in your project folder and give it instructions like:
+Open your AI coding tool in your project folder and give it instructions like:
 
 ```
-Read CLAUDE.md first, then implement Phase 1. Start with backend/db/database.py and backend/db/models.py.
+Read PROJECT.md first, then implement Phase 1. Start with backend/db/database.py and backend/db/models.py.
 ```
 
 After each phase:
 ```
-Phase 1 is done. Now implement Phase 2 — the genetic algorithm optimiser in backend/core/optimiser/genetic.py. Follow the build order in CLAUDE.md.
+Phase 1 is done. Now implement Phase 2 — the genetic algorithm optimiser in backend/core/optimiser/genetic.py. Follow the build order in PROJECT.md.
 ```
 
-Claude Code will read CLAUDE.md on every task to maintain context about the architecture.
+The AI coding tool will read PROJECT.md on every task to maintain context about the architecture.

@@ -1,4 +1,4 @@
-# ModPanel AI Platform — CLAUDE.md
+# ModPanel AI Platform — PROJECT.md
 
 This is the primary reference file for building the **ModPanel AI Platform**, a full-stack web application that uses AI and heuristic optimisation to support modern construction planning. This project is designed to align with the KTP (Knowledge Transfer Partnership) role: *Software Developer with AI in Modern Construction*.
 
@@ -22,7 +22,7 @@ ModPanel AI Platform helps construction companies (like those using Structural I
 | Backend | Python 3.11 + FastAPI | Clean REST APIs, auto-docs at `/docs`, beginner-friendly |
 | Frontend | React 18 + Vite + Tailwind CSS | Fast to build, widely used |
 | Database | SQLite (dev) → PostgreSQL (prod) | SQLite requires zero setup |
-| AI | Anthropic Claude API (claude-haiku-3-5) | Natural language quoting & summaries |
+| AI | AI Model API | Natural language quoting & summaries |
 | Optimisation | Custom Python — Genetic Algorithm | Core KTP technical deliverable |
 | Auth | JWT (python-jose) | Simple token-based auth |
 
@@ -32,7 +32,7 @@ ModPanel AI Platform helps construction companies (like those using Structural I
 
 ```
 modpanel/
-├── CLAUDE.md                  ← this file (always read first)
+├── PROJECT.md                 ← this file (always read first)
 ├── README.md
 ├── .env.example               ← environment variable template
 ├── backend/
@@ -54,7 +54,7 @@ modpanel/
 │   │   │   └── models.py      ← optimiser input/output schemas
 │   │   ├── ai/
 │   │   │   ├── __init__.py
-│   │   │   └── claude_client.py  ← Anthropic API wrapper
+│   │   │   └── claude_client.py  ← AI model API wrapper
 │   │   └── config.py          ← settings loaded from .env
 │   └── db/
 │       ├── __init__.py
@@ -199,7 +199,7 @@ npm run dev
 
 ---
 
-## Build Order (for Claude Code)
+## Build Order
 
 Build strictly in this order — each phase depends on the previous:
 
@@ -218,7 +218,7 @@ Build strictly in this order — each phase depends on the previous:
 | KTP Requirement | Platform Feature |
 |---|---|
 | Heuristic optimisation algorithms | Genetic algorithm for panel layout |
-| AI integration | Claude API for quoting and reports |
+| AI integration | AI model for quoting and reports |
 | Data engineering & API integration | REST API + structured DB schema |
 | Modern Construction Methods | Panel-first design, DfMA principles |
 | Research outputs / reports | Auto-generated project reports |
