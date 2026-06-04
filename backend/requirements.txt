@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+aiosqlite
+asyncpg
+psycopg2-binary
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt<4.0.0
+pydantic-settings
+python-multipart
+anthropic
+pytest
+pytest-asyncio
+httpx
